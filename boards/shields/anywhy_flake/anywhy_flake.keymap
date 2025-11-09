@@ -167,9 +167,9 @@
                 #binding-cells = <0>;
                 bindings =
                     <&macro_press &kp LCTRL>,
-                    <&macro_wait_time 60>,
+                    <&macro_wait_time 550>,
                     <&macro_tap &kp SPACE>,
-                    <&macro_wait_time 15>,
+                    <&macro_wait_time 150>,
                     <&macro_release &kp LCTRL>;
 
                 label = "MACOS_LANG";
