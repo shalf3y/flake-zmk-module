@@ -165,7 +165,13 @@
         macos_lang: macos_lang {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL>, <&macro_wait_time 150>, <&kp SPACE>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 150>,
+                <&kp SPACE>,
+                <&macro_wait_time 50>,
+                <&macro_release>;
 
             label = "MACOS_LANG";
         };
