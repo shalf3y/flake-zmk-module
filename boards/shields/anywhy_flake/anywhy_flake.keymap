@@ -162,19 +162,19 @@
     };
 
     macros {
-        macos_lang: macos_lang {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp LCTRL>,
-                <&macro_wait_time 60>,
-                <&macro_tap &kp SPACE>,
-                <&macro_wait_time 15>,
-                <&macro_release &kp LCTRL>,
+            macos_lang: macos_lang {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings =
+                    <&macro_press &kp LCTRL>,
+                    <&macro_wait_time 60>,
+                    <&macro_tap &kp SPACE>,
+                    <&macro_wait_time 15>,
+                    <&macro_release &kp LCTRL>;
 
-            label = "MACOS_LANG";
+                label = "MACOS_LANG";
+            };
         };
-    };
 
     keymap {
         compatible = "zmk,keymap";
